@@ -31,5 +31,6 @@
     ],
     "tailwindCSS.classFunctions": [
         "useResolveClassNames"
-    ]
+    ],
+    "editor.formatOnSave": true
 }
