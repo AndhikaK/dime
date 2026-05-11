@@ -1,10 +1,10 @@
 {
   "expo": {
-    "scheme": "acme",
+    "scheme": "dime",
     "userInterfaceStyle": "automatic",
     "orientation": "default",
     "web": {
-      "output": "static"
+      "output": "single"
     },
     "name": "dime",
     "slug": "dime"
