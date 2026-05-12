@@ -1,7 +1,9 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
+import { HomeTab } from "@/features/home/screens/HomeTab";
+import { SettingsTab } from "@/features/settings/screens/SettingsTab";
+
 import { MainTabParamList } from "./types";
-import { SettingsTab } from "../features/settings/screens/SettingsTab";
-import { HomeTab } from "../features/home/screens/HomeTab";
 
 const Tab = createBottomTabNavigator<MainTabParamList>();
 

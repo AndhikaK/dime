@@ -1,8 +1,9 @@
-import "../../../global.css";
-
-import { ActivityIndicator, View } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 import { useEffect } from "react";
+import { ActivityIndicator, View } from "react-native";
+
+import { useNavigation } from "@react-navigation/native";
+
+import "@/global.css";
 
 export function InitialScreen() {
   const navigation = useNavigation();
