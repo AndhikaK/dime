@@ -33,7 +33,7 @@
         "useResolveClassNames"
     ],
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": "always"
+    "files.associations": {
+        "global.css": "tailwindcss"
     }
 }

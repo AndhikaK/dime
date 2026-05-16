@@ -3,10 +3,13 @@ import { ActivityIndicator, View } from "react-native";
 
 import { useNavigation } from "@react-navigation/native";
 
+import { useAppTheme } from "@/themes/useAppTheme";
+
 import "@/global.css";
 
 export function InitialScreen() {
   const navigation = useNavigation();
+  useAppTheme();
 
   useEffect(() => {
     navigation.navigate("Main", {

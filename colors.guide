@@ -1,0 +1,8 @@
+surface-bg                  = #141517
+
+bottom-tab-bg               = #25282F
+bottom-tab-border           = #3E3F44
+bottom-tab-text             = #A7ACB2
+bottom-tab-icon-inactive    = #A7ACB2
+bottom-tab-icon-active      = bg-blue-500
+bottom-tab-icon-active-bg   = bg-blue-500/30

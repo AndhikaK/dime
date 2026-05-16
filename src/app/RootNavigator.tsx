@@ -14,6 +14,9 @@ export function RootStack() {
       initialRouteName="InitialScreen"
       screenOptions={{
         headerShown: false,
+        contentStyle: {
+          backgroundColor: "red",
+        },
       }}
     >
       <Stack.Screen name="InitialScreen" component={InitialScreen} />

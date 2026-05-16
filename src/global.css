@@ -1,2 +1,19 @@
 @import "tailwindcss";
 @import "uniwind";
+
+/* Background Colors */
+.bg-surface {
+  @apply bg-[white] dark:bg-[#141517];
+}
+.bg-bottom-tabbar {
+  @apply bg-[white] dark:bg-[#25282F];
+}
+
+.border-bottom-tabbar {
+  @apply border-[red] dark:border-[#3E3F44];
+}
+
+/* Text Colors */
+.text-bottom-tabbar {
+  @apply text-[black] dark:text-[#A7ACB2];
+}

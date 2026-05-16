@@ -8,6 +8,8 @@ export type RootStackParamList = {
 export type MainTabParamList = {
   HomeTab: undefined;
   SettingsTab: undefined;
+  AccountsTab: undefined;
+  StatisticTab: undefined;
 };
 
 declare global {
