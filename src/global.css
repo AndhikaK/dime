@@ -14,6 +14,9 @@
 }
 
 /* Text Colors */
+.text-primary {
+  @apply text-black dark:text-white;
+}
 .text-bottom-tabbar {
   @apply text-[black] dark:text-[#A7ACB2];
 }

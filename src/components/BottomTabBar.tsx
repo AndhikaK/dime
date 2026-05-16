@@ -5,6 +5,7 @@ import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 
 import { cn } from "@/libs/utils";
+import { Typography } from "./Typography";
 
 export function BottomTabBar(props: BottomTabBarProps) {
   const { descriptors, navigation, state, insets } = props;
@@ -72,14 +73,12 @@ export function BottomTabBar(props: BottomTabBarProps) {
                 </View>
               </View>
 
-              <Text
-                className={cn(
-                  "text-bottom-tabbar text-xs",
-                  isFocused && "font-bold",
-                )}
+              <Typography
+                variant="bottomTab"
+                className={cn(isFocused && "font-bold")}
               >
                 {label}
-              </Text>
+              </Typography>
             </View>
           </TouchableWithoutFeedback>
         );

@@ -1,9 +1,11 @@
-import { Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+import { Typography } from "@/components/Typography";
 
 export function AccountsTab() {
   return (
-    <View>
-      <Text>AccountsTab</Text>
-    </View>
+    <SafeAreaView>
+      <Typography>AccountsTab</Typography>
+    </SafeAreaView>
   );
 }

@@ -1,9 +1,11 @@
-import { Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+import { Typography } from "@/components/Typography";
 
 export function StatisticTab() {
   return (
-    <View>
-      <Text>StatisticTab</Text>
-    </View>
+    <SafeAreaView>
+      <Typography>StatisticTab</Typography>
+    </SafeAreaView>
   );
 }

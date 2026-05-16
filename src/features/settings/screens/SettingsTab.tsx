@@ -1,5 +1,11 @@
-import { Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+import { Typography } from "@/components/Typography";
 
 export function SettingsTab() {
-  return <Text>Settings</Text>;
+  return (
+    <SafeAreaView>
+      <Typography>Settings</Typography>
+    </SafeAreaView>
+  );
 }

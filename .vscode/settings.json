@@ -30,7 +30,9 @@
         "ListHeaderComponentClassName"
     ],
     "tailwindCSS.classFunctions": [
-        "useResolveClassNames"
+        "useResolveClassNames",
+        "cva",
+        "cx"
     ],
     "editor.formatOnSave": true,
     "files.associations": {
