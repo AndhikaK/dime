@@ -1,10 +1,11 @@
-import { Text, TouchableWithoutFeedback, View } from "react-native";
+import { TouchableWithoutFeedback, View } from "react-native";
 
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
 
 import { cn } from "@/libs/utils";
+
 import { Typography } from "./Typography";
 
 export function BottomTabBar(props: BottomTabBarProps) {

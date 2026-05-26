@@ -6,16 +6,20 @@ import { BottomTabNavigator } from "@/navigation/BottomTabNavigator";
 
 import { InitialScreen } from "@/features/home/screens/InitialScreen";
 
+import { useAppTheme } from "@/themes/useAppTheme";
+
 const Stack = createNativeStackNavigator();
 
 export function RootStack() {
+  const { color } = useAppTheme();
+
   return (
     <Stack.Navigator
       initialRouteName="InitialScreen"
       screenOptions={{
         headerShown: false,
         contentStyle: {
-          backgroundColor: "red",
+          backgroundColor: color.surface.primary,
         },
       }}
     >

@@ -1,11 +1,11 @@
-import { SafeAreaView } from "react-native-safe-area-context";
+import { View } from "react-native";
 
-import { Typography } from "@/components/Typography";
+import { AppBar } from "@/components/AppBar";
 
 export function AccountsTab() {
   return (
-    <SafeAreaView>
-      <Typography>AccountsTab</Typography>
-    </SafeAreaView>
+    <View>
+      <AppBar title="Accounts" />
+    </View>
   );
 }

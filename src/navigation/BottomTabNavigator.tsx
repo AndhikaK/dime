@@ -59,10 +59,10 @@ export function BottomTabNavigator() {
         }}
       />
       <Tab.Screen
-        name="SettingsTab"
-        component={SettingsTab}
+        name="AccountsTab"
+        component={AccountsTab}
         options={{
-          title: "Settings",
+          title: "Accounts",
           tabBarIcon: ({ focused }) => (
             <View
               className={cn(
@@ -74,10 +74,10 @@ export function BottomTabNavigator() {
         }}
       />
       <Tab.Screen
-        name="AccountsTab"
-        component={AccountsTab}
+        name="SettingsTab"
+        component={SettingsTab}
         options={{
-          title: "Accounts",
+          title: "Settings",
           tabBarIcon: ({ focused }) => (
             <View
               className={cn(

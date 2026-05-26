@@ -1,35 +1,25 @@
-import { Text, View } from "react-native";
-
-import { BottomTabHeaderProps } from "@react-navigation/bottom-tabs";
-import { getHeaderTitle } from "@react-navigation/elements";
-import { NativeStackHeaderProps } from "@react-navigation/native-stack";
+import { View } from "react-native";
 
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
-export function AppBar(props: NativeStackHeaderProps | BottomTabHeaderProps) {
-  const { options, navigation } = props;
+import { Typography } from "./Typography";
+
+export type AppBarProps = {
+  title?: string;
+  headerRight?: React.ReactNode;
+};
+export function AppBar(props: AppBarProps) {
+  const { title, headerRight = null } = props;
 
   const insets = useSafeAreaInsets();
 
   return (
-    <View style={{ paddingTop: insets.top }} className="flex flex-row">
-      <HeaderTitle {...props} />
+    <View style={{ paddingTop: insets.top }}>
+      <View className="p-4 py-3 bg-surface flex flex-row items-center justify-between">
+        <Typography variant="appbar-title">{title}</Typography>
+
+        {!!headerRight && <View>{headerRight}</View>}
+      </View>
     </View>
   );
-}
-
-type HeaderTitleProps = NativeStackHeaderProps | BottomTabHeaderProps;
-function HeaderTitle(props: HeaderTitleProps) {
-  const { options, route } = props;
-
-  const title = getHeaderTitle(
-    { headerTitle: options.headerTitle, title: options.title },
-    route.name,
-  );
-
-  if (typeof title === "string") {
-    return <Text>{title}</Text>;
-  }
-
-  return title;
 }
