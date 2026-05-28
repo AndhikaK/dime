@@ -13,7 +13,7 @@ export function InitialScreen() {
 
   useEffect(() => {
     navigation.navigate("Main", {
-      screen: "HomeTab",
+      screen: "SettingsTab",
     });
   }, [navigation]);
 

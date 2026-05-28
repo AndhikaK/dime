@@ -10,6 +10,10 @@
     "slug": "dime",
     "android": {
       "package": "com.kissuki.dime"
+    },
+    "jsEngine": "hermes",
+    "ios": {
+      "jsEngine": "jsc"
     }
   }
 }

@@ -3,6 +3,7 @@ import { NavigatorScreenParams } from "@react-navigation/native";
 export type RootStackParamList = {
   InitialScreen: undefined;
   Main: NavigatorScreenParams<MainTabParamList>;
+  Setting: NavigatorScreenParams<SettingNavigatorParamlist>;
 };
 
 export type MainTabParamList = {
@@ -10,6 +11,10 @@ export type MainTabParamList = {
   SettingsTab: undefined;
   AccountsTab: undefined;
   StatisticTab: undefined;
+};
+
+export type SettingNavigatorParamlist = {
+  DisplaySettingScreen: undefined;
 };
 
 declare global {

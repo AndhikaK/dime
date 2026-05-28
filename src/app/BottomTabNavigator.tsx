@@ -29,6 +29,21 @@ export function BottomTabNavigator() {
       }}
     >
       <Tab.Screen
+        name="SettingsTab"
+        component={SettingsTab}
+        options={{
+          title: "Settings",
+          tabBarIcon: ({ focused }) => (
+            <View
+              className={cn(
+                "w-6 h-6 rounded-full",
+                focused ? "bg-blue-500" : "bg-[#A7ACB2]",
+              )}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
         name="HomeTab"
         component={HomeTab}
         options={{
@@ -63,21 +78,6 @@ export function BottomTabNavigator() {
         component={AccountsTab}
         options={{
           title: "Accounts",
-          tabBarIcon: ({ focused }) => (
-            <View
-              className={cn(
-                "w-6 h-6 rounded-full",
-                focused ? "bg-blue-500" : "bg-[#A7ACB2]",
-              )}
-            />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="SettingsTab"
-        component={SettingsTab}
-        options={{
-          title: "Settings",
           tabBarIcon: ({ focused }) => (
             <View
               className={cn(

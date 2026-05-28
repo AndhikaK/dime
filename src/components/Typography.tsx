@@ -2,12 +2,14 @@ import { Text, TextProps } from "react-native";
 
 import { cva, VariantProps } from "class-variance-authority";
 
-const typographyStyles = cva("text-primary tracking-wide", {
+const typographyStyles = cva("text-primary tracking-wide leading-none", {
   variants: {
     variant: {
+      headline: "text-lg font-bold",
       body1: "text-base",
       "appbar-title": "text-md font-medium",
       bottomTab: "text-xs text-bottom-tabbar",
+      caption: "text-sm",
     },
   },
   defaultVariants: { variant: "body1" },

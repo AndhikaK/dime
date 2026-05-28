@@ -2,11 +2,12 @@ import * as React from "react";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { BottomTabNavigator } from "@/navigation/BottomTabNavigator";
-
 import { InitialScreen } from "@/features/home/screens/InitialScreen";
 
+import { BottomTabNavigator } from "@/app/BottomTabNavigator";
 import { useAppTheme } from "@/themes/useAppTheme";
+
+import { SettingNavigator } from "./SettingNavigator";
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,7 @@ export function RootStack() {
     >
       <Stack.Screen name="InitialScreen" component={InitialScreen} />
       <Stack.Screen name="Main" component={BottomTabNavigator} />
+      <Stack.Screen name="Setting" component={SettingNavigator} />
     </Stack.Navigator>
   );
 }
