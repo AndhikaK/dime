@@ -1,43 +1,9 @@
 {
-    "tailwindCSS.classAttributes": [
-        "class",
-        "className",
-        "headerClassName",
-        "contentContainerClassName",
-        "columnWrapperClassName",
-        "endFillColorClassName",
-        "imageClassName",
-        "tintColorClassName",
-        "ios_backgroundColorClassName",
-        "thumbColorClassName",
-        "trackColorOnClassName",
-        "trackColorOffClassName",
-        "selectionColorClassName",
-        "cursorColorClassName",
-        "underlineColorAndroidClassName",
-        "placeholderTextColorClassName",
-        "selectionHandleColorClassName",
-        "colorsClassName",
-        "progressBackgroundColorClassName",
-        "titleColorClassName",
-        "underlayColorClassName",
-        "colorClassName",
-        "drawerBackgroundColorClassName",
-        "statusBarBackgroundColorClassName",
-        "backdropColorClassName",
-        "backgroundColorClassName",
-        "ListFooterComponentClassName",
-        "ListHeaderComponentClassName"
-    ],
-    "tailwindCSS.classFunctions": [
-        "useResolveClassNames",
-        "cva",
-        "cx"
-    ],
-    "editor.formatOnSave": true,
-    "files.associations": {
-        "global.css": "tailwindcss"
-    },
-    "snyk.advanced.autoSelectOrganization": true,
-    "snyk.advanced.organization": "34c474f9-2389-459a-9e72-7b600e98d3cd"
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "snyk.advanced.organization": "34c474f9-2389-459a-9e72-7b600e98d3cd",
+  "snyk.advanced.autoSelectOrganization": true
 }

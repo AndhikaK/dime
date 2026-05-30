@@ -1,33 +1,9 @@
-@import "tailwindcss";
-@import "uniwind";
-
-/* Background Colors */
-.bg-surface {
-  @apply bg-[white] dark:bg-[#141517];
-}
-.bg-card {
-  @apply bg-[#25282F] dark:bg-[#25282F];
-}
-.border-card {
-  @apply border-0 border-t-2 border-[#313538] dark:border-[#313538];
-}
-
-.bg-bottom-tabbar {
-  @apply bg-[white] dark:bg-[#25282F];
-}
-
-.border-bottom-tabbar {
-  @apply border-[red] dark:border-[#3E3F44];
-}
-
-/* Text Colors */
-.text-primary {
-  @apply text-black dark:text-[#D3D6DD];
-}
-.text-bottom-tabbar {
-  @apply text-[black] dark:text-[#A7ACB2];
-}
-
-.text-secondary {
-  @apply text-[black] dark:text-[#A7ACB2];
+:root {
+  --font-display:
+    Spline Sans, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
 }

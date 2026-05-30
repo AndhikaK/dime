@@ -1,3 +1,2 @@
 allowBuilds:
-  unrs-resolver: false
-nodeLinker: hoisted
+  msgpackr-extract: set this to true or false
