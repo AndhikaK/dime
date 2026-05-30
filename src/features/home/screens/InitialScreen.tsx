@@ -3,13 +3,10 @@ import { ActivityIndicator, View } from "react-native";
 
 import { useNavigation } from "@react-navigation/native";
 
-import { useAppTheme } from "@/themes/useAppTheme";
-
 import "@/global.css";
 
-export function InitialScreen() {
+const InitialScreen = () => {
   const navigation = useNavigation();
-  useAppTheme();
 
   useEffect(() => {
     navigation.navigate("Main", {
@@ -22,4 +19,6 @@ export function InitialScreen() {
       <ActivityIndicator size={40} />
     </View>
   );
-}
+};
+
+export default InitialScreen;

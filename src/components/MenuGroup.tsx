@@ -6,7 +6,6 @@ import {
   View,
 } from "react-native";
 
-import { LinearGradient } from "expo-linear-gradient";
 import { Gesture, GestureDetector } from "react-native-gesture-handler";
 import Animated, {
   useAnimatedStyle,
@@ -20,7 +19,7 @@ import { cn } from "@/libs/utils";
 import { Typography } from "./Typography";
 
 export type MenuGroupProps = {
-  groupTitle: string;
+  groupTitle?: string;
   menus: MenuItemProps[];
 };
 export function MenuGroup({ groupTitle, menus }: MenuGroupProps) {

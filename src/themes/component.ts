@@ -14,6 +14,9 @@ interface ComponentTokens {
       activeBg: string;
     };
   };
+  icon: {
+    primary: string;
+  };
 }
 
 // Light and dark each get their own component token map.
@@ -32,6 +35,9 @@ const lightComponent: ComponentTokens = {
       activeBg: `${p.color.blue[500]}4D`,
     },
   },
+  icon: {
+    primary: p.color.white,
+  },
 };
 
 const darkComponent: ComponentTokens = {
@@ -47,6 +53,9 @@ const darkComponent: ComponentTokens = {
       active: p.color.blue[400],
       activeBg: `${p.color.blue[400]}4D`,
     },
+  },
+  icon: {
+    primary: p.color.white,
   },
 };
 

@@ -4,10 +4,11 @@ import { useNavigation } from "@react-navigation/native";
 
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import { AppIcon } from "@/components/Icon";
 import { MenuGroup, MenuGroupProps } from "@/components/MenuGroup";
 import { Typography } from "@/components/Typography";
 
-export function SettingsTab() {
+const SettingsTab = () => {
   const navigation = useNavigation();
 
   const listMenus: MenuGroupProps["menus"] = [
@@ -20,7 +21,7 @@ export function SettingsTab() {
       icons: <View className="bg-red-50 h-5 w-5" />,
       title: "Display",
       description: "Essentially unbreakable variant",
-      actions: <View className="bg-red-50 h-5 w-5" />,
+      actions: <AppIcon variant="fontawesome6" name="chevron-right" />,
       onPress: () => {
         navigation.navigate("Setting", { screen: "DisplaySettingScreen" });
       },
@@ -37,4 +38,6 @@ export function SettingsTab() {
       </View>
     </SafeAreaView>
   );
-}
+};
+
+export default SettingsTab;

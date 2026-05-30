@@ -2,16 +2,16 @@ import * as React from "react";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import { InitialScreen } from "@/features/home/screens/InitialScreen";
+import InitialScreen from "@/features/home/screens/InitialScreen";
 
-import { BottomTabNavigator } from "@/app/BottomTabNavigator";
 import { useAppTheme } from "@/themes/useAppTheme";
 
-import { SettingNavigator } from "./SettingNavigator";
+import BottomTabNavigator from "./BottomTabNavigator";
+import SettingNavigator from "./SettingNavigator";
 
 const Stack = createNativeStackNavigator();
 
-export function RootStack() {
+const RootStack = () => {
   const { color } = useAppTheme();
 
   return (
@@ -29,4 +29,6 @@ export function RootStack() {
       <Stack.Screen name="Setting" component={SettingNavigator} />
     </Stack.Navigator>
   );
-}
+};
+
+export default RootStack;

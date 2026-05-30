@@ -2,10 +2,12 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 import { Typography } from "@/components/Typography";
 
-export function StatisticTab() {
+const StatisticTab = () => {
   return (
     <SafeAreaView>
       <Typography>StatisticTab</Typography>
     </SafeAreaView>
   );
-}
+};
+
+export default StatisticTab;

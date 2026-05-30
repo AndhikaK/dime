@@ -2,10 +2,10 @@ import { View } from "react-native";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import { AccountsTab } from "@/features/account/screens/ListAccountTab";
-import { HomeTab } from "@/features/home/screens/HomeTab";
-import { StatisticTab } from "@/features/home/screens/StatisticTab";
-import { SettingsTab } from "@/features/settings/screens/SettingsTab";
+import AccountsTab from "@/features/account/screens/ListAccountTab";
+import HomeTab from "@/features/home/screens/HomeTab";
+import StatisticTab from "@/features/home/screens/StatisticTab";
+import SettingsTab from "@/features/settings/screens/SettingsTab";
 
 import { BottomTabBar } from "@/components/BottomTabBar";
 import { cn } from "@/libs/utils";
@@ -15,7 +15,7 @@ import { MainTabParamList } from "./types";
 
 const Tab = createBottomTabNavigator<MainTabParamList>();
 
-export function BottomTabNavigator() {
+const BottomTabNavigator = () => {
   const { color } = useAppTheme();
 
   return (
@@ -90,4 +90,6 @@ export function BottomTabNavigator() {
       />
     </Tab.Navigator>
   );
-}
+};
+
+export default BottomTabNavigator;
