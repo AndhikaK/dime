@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Text, View } from "react-native";
+import { ActivityIndicator, StyleSheet } from "react-native";
 
 import { useNavigation } from "@react-navigation/native";
 
@@ -9,14 +9,24 @@ const InitialScreen = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
-    navigation.navigate("AccountManagerScreen");
+    navigation.navigate("HomeTabs", {
+      screen: "AccountManagerTab",
+    });
   }, [navigation]);
 
   return (
-    <SafeAreaView>
-      <Text>Initial Screen</Text>
+    <SafeAreaView style={styles.container}>
+      <ActivityIndicator color="blue" size="large" />
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
 
 export default InitialScreen;

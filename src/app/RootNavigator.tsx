@@ -1,8 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import AccountManagerScreen from "@/features/account/screens/AccountManagerScreen";
-
+import BottomTabNavigator from "./BottomTabNavigator";
 import InitialScreen from "./InitialScreen";
 import { RootStackParamList } from "./type";
 
@@ -25,10 +24,7 @@ const RootNavigator = () => {
         }}
       >
         <Stack.Screen name="InitialScreen" component={InitialScreen} />
-        <Stack.Screen
-          name="AccountManagerScreen"
-          component={AccountManagerScreen}
-        />
+        <Stack.Screen name="HomeTabs" component={BottomTabNavigator} />
       </Stack.Navigator>
     </NavigationContainer>
   );
