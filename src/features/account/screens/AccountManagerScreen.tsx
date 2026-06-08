@@ -1,10 +1,12 @@
 import { Text, View } from "react-native";
 
+import { SafeAreaView } from "react-native-safe-area-context";
+
 const AccountManagerScreen = () => {
   return (
-    <View>
-      <Text>Account Manager Screen</Text>
-    </View>
+    <SafeAreaView>
+      <Text>Account Manager Screen hehehe</Text>
+    </SafeAreaView>
   );
 };
 
