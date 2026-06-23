@@ -1,19 +1,11 @@
-import { Text, View } from "react-native";
-import { StyleSheet } from "react-native-unistyles";
+import { NavigationContainer } from "@react-navigation/native";
+
+import RootNavigator from "./navigations/RootNavigator";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <NavigationContainer>
+      <RootNavigator />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create((theme) => ({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-}));
