@@ -1,8 +1,8 @@
-import "./unistyles";
+import "@/styles/unistyles";
 
 import { registerRootComponent } from "expo";
 
-import App from "./App";
+import App from "@/App";
 
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
