@@ -1,4 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { View } from "react-native";
 import { useUnistyles } from "react-native-unistyles";
 
 import { TabBar } from "@/components/TabBar";
@@ -27,6 +28,15 @@ const BottomTabNavigator = () => {
         component={HomeTabScreen}
         options={{
           tabBarLabel: "Home",
+          tabBarIcon: ({ focused }) => (
+            <View
+              style={{
+                backgroundColor: focused ? "white" : "black",
+                height: 20,
+                width: 20,
+              }}
+            />
+          ),
         }}
       />
       <Tabs.Screen
@@ -34,6 +44,15 @@ const BottomTabNavigator = () => {
         component={AccountListScreen}
         options={{
           tabBarLabel: "Accounts",
+          tabBarIcon: ({ focused }) => (
+            <View
+              style={{
+                backgroundColor: focused ? "white" : "black",
+                height: 20,
+                width: 20,
+              }}
+            />
+          ),
         }}
       />
     </Tabs.Navigator>

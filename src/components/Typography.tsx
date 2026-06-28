@@ -17,6 +17,10 @@ const styles = StyleSheet.create((theme) => ({
     fontSize: 14,
     variants: {
       variant: {
+        "subheading-semibold": {
+          fontSize: 18,
+          fontWeight: 700,
+        },
         "body-primary": {
           fontSize: 16,
         },
@@ -25,6 +29,10 @@ const styles = StyleSheet.create((theme) => ({
         },
         "body-tertiary": {
           fontSize: 12,
+        },
+        button: {
+          fontSize: 14,
+          fontWeight: "bold",
         },
       },
     },

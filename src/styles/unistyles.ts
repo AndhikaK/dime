@@ -8,6 +8,10 @@ const lightTheme = {
 
     "text-primary": "#43464D",
 
+    border: "#E0E4E7",
+
+    brand: "#438F34",
+
     background: "#FCFAF8",
     foreground: "#EDEAE6",
     typography: "#1B140C",
@@ -33,6 +37,10 @@ const darkTheme = {
     "fill-bottom-bar": "#242830",
 
     "text-primary": "#9FA2AA",
+
+    border: "#363A3D",
+
+    brand: "#438F34",
 
     background: "#221A11",
     foreground: "#332618",
@@ -66,7 +74,7 @@ const breakpoints = {
 };
 
 type AppBreakpoints = typeof breakpoints;
-type AppThemes = typeof appThemes;
+export type AppThemes = typeof appThemes;
 
 declare module "react-native-unistyles" {
   // eslint-disable-next-line @typescript-eslint/no-empty-object-type

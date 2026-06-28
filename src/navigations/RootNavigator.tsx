@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useUnistyles } from "react-native-unistyles";
 
+import AddAccountScreen from "@/screens/AddAccountScreen";
 import InitialScreen from "@/screens/InitialScreen";
 
 import BottomTabNavigator from "./BottomNavigator";
@@ -19,10 +20,15 @@ const RootNavigator = () => {
         contentStyle: {
           backgroundColor: theme.colors["surface-primary"],
         },
+        animation: "ios_from_right",
       }}
     >
       <Stack.Screen name="/initial" component={InitialScreen} />
       <Stack.Screen name="/main" component={BottomTabNavigator} />
+
+      <Stack.Group>
+        <Stack.Screen name="/accounts/add" component={AddAccountScreen} />
+      </Stack.Group>
     </Stack.Navigator>
   );
 };

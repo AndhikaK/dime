@@ -19,8 +19,6 @@ export const TabBar = (props: BottomTabBarProps) => {
               : route.name
         ) as string;
 
-        const Icon = options.tabBarIcon;
-
         const isFocused = state.index === index;
 
         const onPress = () => {
@@ -49,7 +47,16 @@ export const TabBar = (props: BottomTabBarProps) => {
             onLongPress={onLongPress}
           >
             <View style={[styles.itemContainer]}>
-              <Typography style={[isFocused && styles.labelFocused]}>
+              {options.tabBarIcon?.({
+                focused: isFocused,
+                color: "black",
+                size: 14,
+              })}
+
+              <Typography
+                variant="body-secondary"
+                style={[isFocused && styles.labelFocused]}
+              >
                 {label}
               </Typography>
             </View>
@@ -70,8 +77,11 @@ const styles = StyleSheet.create((theme, rt) => ({
   itemContainer: {
     flex: 1,
     paddingVertical: 16,
+    gap: 4,
     alignItems: "center",
     justifyContent: "center",
+    borderTopWidth: 1,
+    borderTopColor: theme.colors.border,
   },
   labelFocused: {
     fontWeight: "bold",
